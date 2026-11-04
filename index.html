@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>מערכת ליווי עבודות גמר | Thesis Project Guidance System</title>
+<meta name="description" content="כלי חינוכי חינמי למורים בישראל לליווי עבודות גמר של תלמידי תיכון. כל נתוני המורה והתלמידים נשמרים בחשבון Google של המורה. | A free tool for Israeli teachers to guide high-school thesis projects; all data stays in the teacher's own Google account.">
+<style>
+:root{--ink:#1b1f24;--muted:#5b6570;--line:#d9dee4;--brand:#1a5fb4;--soft:#f3f6fb}
+*{box-sizing:border-box}
+body{font-family:system-ui,"Segoe UI",Arial,sans-serif;line-height:1.75;margin:0;color:var(--ink);background:#fff}
+header{background:var(--soft);border-bottom:1px solid var(--line)}
+.wrap{max-width:52rem;margin:0 auto;padding:0 1rem}
+nav{display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;padding:.8rem 0;font-size:.95rem}
+nav a{color:var(--brand);text-decoration:none}nav a:hover{text-decoration:underline}
+.hero{padding:2.2rem 0 1.6rem}
+h1{font-size:2rem;margin:.2rem 0}h2{font-size:1.35rem;margin-top:2.2rem;border-bottom:1px solid var(--line);padding-bottom:.2rem}
+.lead{font-size:1.15rem;color:#2b3440}
+.cta{display:inline-block;background:var(--brand);color:#fff;padding:.6rem 1.2rem;border-radius:8px;text-decoration:none;margin:.4rem .4rem .4rem 0}
+.cta.alt{background:#fff;color:var(--brand);border:1px solid var(--brand)}
+ul{padding-inline-start:1.3rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1rem}
+.card{border:1px solid var(--line);border-radius:10px;padding:.8rem 1rem;background:#fff}
+.card h3{margin:.1rem 0 .3rem;font-size:1.05rem}
+.note{background:#fff8e1;border:1px solid #f0d98a;border-radius:8px;padding:.7rem 1rem}
+.en{direction:ltr;text-align:left;border-top:2px solid var(--line);margin-top:3rem;padding-top:1rem}
+footer{border-top:1px solid var(--line);margin-top:3rem;padding:1.2rem 0;color:var(--muted);font-size:.9rem}
+footer a{color:var(--brand)}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<nav aria-label="ניווט ראשי">
+<a href="index.html">דף הבית</a>
+<a href="https://urony.github.io/gantt-site/guide/">מדריך למורים</a>
+<a href="https://urony.github.io/gantt-site/join/">הצטרפות מורים</a>
+<a href="privacy.html">מדיניות פרטיות</a>
+<a href="terms.html">תנאי שימוש</a>
+<a href="#english">English</a>
+</nav>
+<div class="hero">
+<h1>מערכת ליווי עבודות גמר</h1>
+<p class="lead">כלי חינוכי חינמי למורים בישראל, לליווי עבודות גמר של תלמידי תיכון: מועדים, משימות, הגשת קבצים, הערות ומשוב וציונים, במקום אחד ברור.</p>
+<p><a class="cta" href="https://urony.github.io/gantt-site/join/">הקמת המערכת (למורים)</a><a class="cta alt" href="https://urony.github.io/gantt-site/guide/">מדריך למורים</a></p>
+</div></div></header>
+
+<main class="wrap">
+<h2>מה המערכת עושה</h2>
+<div class="cards">
+<div class="card"><h3>תכנון וגאנט</h3><p>מחזור עבודות, משימות ומועדים בגאנט ובלוח שנה, כולל חופשות וחגים של משרד החינוך.</p></div>
+<div class="card"><h3>הגשה ובדיקה</h3><p>תלמידים מגישים קבצים, והמורה בודק, כותב הערות, מנקד לפי מחוון ומפרסם משוב וציון.</p></div>
+<div class="card"><h3>שקיפות לתלמיד</h3><p>כל תלמיד רואה את המשימות, ההערות והציון שלו בלבד.</p></div>
+</div>
+
+<h2>למי זה מיועד</h2>
+<p>למורים שמלווים עבודות גמר בבית הספר התיכון, ולתלמידים שלהם. התלמיד נכנס רק אם המורה רשם אותו.</p>
+
+<h2>איך הפרטיות נשמרת</h2>
+<p><strong>לכל מורה שרת פרטי משלו, בחשבון Google שלו.</strong> שמות תלמידים, עבודות, הערות וציונים נשמרים ב-Google Drive של המורה ולא אצל מפעיל האתר. מפעיל האתר אינו מחזיק מסד נתונים, ואינו רואה נתוני מורים או תלמידים. פירוט מלא ב<a href="privacy.html">מדיניות הפרטיות</a>.</p>
+
+<h2>למה ההקמה מבקשת גישה לחשבון Google</h2>
+<p>בהקמה חד-פעמית, בדפדפן של המורה, המערכת יוצרת בחשבון Google של המורה את השרת הפרטי שלו: פרויקט Apps Script, גרסה ופריסה, ופרויקט Google Cloud אישי שמאפשר לשרת להתעדכן בעצמו בגרסאות חתומות. ההרשאות נשארות בזיכרון הדף בלבד, ואינן נשמרות או נשלחות למפעיל. את הגישה אפשר לבטל בכל עת ב-<a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. הסבר מפורט על כל הרשאה נמצא ב<a href="privacy.html#google-scopes">מדיניות הפרטיות</a> ובמדריך.</p>
+
+<h2>מי מפעיל את המערכת</h2>
+<p>אורי העליון, מורה לביולוגיה ולמדעי הבריאות בישראל. פניות: <a href="mailto:uribyology@gmail.com">uribyology@gmail.com</a>.</p>
+
+<div class="en" id="english" lang="en" dir="ltr">
+<h2>Thesis Project Guidance System</h2>
+<p class="lead">A free educational tool for Israeli high-school teachers to guide students' thesis projects: schedules, tasks, file submissions, comments, feedback and grades in one place.</p>
+<ul>
+<li><strong>Who it is for.</strong> Teachers who supervise thesis projects, and their students. A student can sign in only if the teacher registered them.</li>
+<li><strong>Your data stays yours.</strong> Each teacher runs their own private server in their own Google account (Google Apps Script). Student names, submissions, feedback and grades are stored in the teacher's own Google Drive. The operator has no database and cannot access teacher or student data.</li>
+<li><strong>Why setup asks for Google access.</strong> In a one-time setup, run in the teacher's browser, the system creates the teacher's own Apps Script project, version and deployment, and a personal Google Cloud project that lets the server install signed updates to itself. Tokens stay in browser memory only and are never stored or sent to the operator. Access can be revoked at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+<li><strong>Operator.</strong> אורי העליון, a biology and health-sciences teacher in Israel. Contact: <a href="mailto:uribyology@gmail.com">uribyology@gmail.com</a>.</li>
+</ul>
+<p><a class="cta" href="https://urony.github.io/gantt-site/join/">Teacher setup</a><a class="cta alt" href="https://urony.github.io/gantt-site/guide/">Teacher guide (Hebrew)</a><a class="cta alt" href="privacy.html">Privacy Policy</a><a class="cta alt" href="terms.html">Terms of Use</a></p>
+<p class="note">The system's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+</div>
+</main>
+
+<footer><div class="wrap">
+© 2026 אורי העליון · <a href="privacy.html">מדיניות פרטיות / Privacy Policy</a> · <a href="terms.html">תנאי שימוש / Terms</a> · <a href="mailto:uribyology@gmail.com">uribyology@gmail.com</a> · עדכון אחרון: 2026-11-04
+</div></footer>
+</body>
+</html>
