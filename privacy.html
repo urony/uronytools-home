@@ -18,7 +18,7 @@ code{background:#f3f5f8;padding:0 .3rem;border-radius:4px}
 <body>
 <nav><a href="index.html">דף הבית</a><a href="privacy.html">מדיניות פרטיות</a><a href="terms.html">תנאי שימוש</a><a href="https://urony.github.io/gantt-site/guide/">מדריך למורים</a><a href="https://urony.github.io/gantt-site/join/">הצטרפות מורים</a></nav>
 <h1>מדיניות פרטיות</h1>
-<p class="muted">מערכת ליווי עבודות גמר ("המערכת") · עדכון אחרון: 2026-11-04 · מפעיל האתר: אורי העליון · פניות בנושא פרטיות: <a href="mailto:uribyology@gmail.com">uribyology@gmail.com</a></p>
+<p class="muted">מערכת ליווי עבודות גמר ("המערכת") · עדכון אחרון: 2026-11-23 · מפעיל האתר: אורי העליון · פניות בנושא פרטיות: <a href="mailto:uribyology@gmail.com">uribyology@gmail.com</a></p>
 
 <h2>1. בקצרה</h2>
 <p>המערכת עוזרת למורה ללוות תלמידים בעבודת גמר: מועדים, משימות, הגשת קבצים, הערות ומשוב. <strong>כל הנתונים נשמרים בחשבון Google של המורה שהקים את המערכת, ולא אצל מפעיל האתר.</strong> מפעיל האתר אינו רואה, אינו מקבל ואינו שומר שמות תלמידים, עבודות, הערות או ציונים.</p>
@@ -51,7 +51,7 @@ code{background:#f3f5f8;padding:0 .3rem;border-radius:4px}
 <table>
 <tr><th>מי</th><th>מתי</th><th>הרשאה</th><th>למה</th></tr>
 <tr><td>מורה ותלמיד</td><td>כניסה לאתר</td><td>זיהוי בסיסי (openid, דוא"ל, שם)</td><td>לזהות מי נכנס ולהתאים לרשימת המורה</td></tr>
-<tr><td>מורה</td><td>הקמה חד-פעמית בדף ההצטרפות</td><td><code>script.projects</code> (יצירה ועדכון של פרויקטי Apps Script); <code>script.deployments</code> (יצירה ועדכון של פריסות); <code>cloud-platform</code> (יצירת פרויקט Google Cloud אישי והפעלת Apps Script API בו); <code>userinfo.email</code> (הצגת החשבון שמוקם)</td><td>ליצור את שרת המורה בחשבונו, לפרוס אותו ולהפעיל את שירות העדכונים בפרויקט האישי שלו. ההרשאות נשארות בדפדפן המורה בזמן ההקמה בלבד, ואינן נשמרות או נשלחות לאיש</td></tr>
+<tr><td>מורה</td><td>הקמה חד-פעמית בדף ההצטרפות</td><td><code>script.projects</code> (יצירה ועדכון של פרויקטי Apps Script); <code>script.deployments</code> (יצירה ועדכון של פריסות); <code>cloudplatformprojects</code> (יצירת פרויקט Google Cloud אישי בלבד); <code>service.management</code> (הפעלת Apps Script API בפרויקט האישי הזה בלבד); <code>userinfo.email</code> (הצגת החשבון שמוקם)</td><td>ליצור את שרת המורה בחשבונו, לפרוס אותו ולהפעיל את שירות העדכונים בפרויקט האישי שלו. ההרשאות נשארות בדפדפן המורה בזמן ההקמה בלבד, ואינן נשמרות או נשלחות לאיש</td></tr>
 <tr><td>המורה (בעל השרת)</td><td>אישור חד-פעמי של השרת האישי (הסקריפט של המורה, לא של מפעיל האתר)</td><td><code>drive</code>; <code>script.external_request</code>; <code>script.scriptapp</code>; <code>script.projects</code>; <code>script.deployments</code>; <code>userinfo.email</code></td><td>שמירת הקבצים והנתונים בתיקיית המערכת, בדיקה והתקנת עדכונים חתומים באמצעות טריגר מתוזמן, אימות זהות מול Google</td></tr>
 </table>
 <p class="muted">הרשימה משקפת את הקוד. כל שינוי בהרשאות ייכלל בעדכון של מדיניות זו לפני כניסתו לתוקף.</p>
@@ -104,14 +104,15 @@ code{background:#f3f5f8;padding:0 .3rem;border-radius:4px}
 
 <div class="en" lang="en" dir="ltr">
 <h2>Privacy Policy (English)</h2>
-<p><strong>Student-and-teacher project guidance system for Israeli high-school thesis projects.</strong> Operator: אורי העליון. Contact: <a href="mailto:uribyology@gmail.com">uribyology@gmail.com</a>. Last updated: 2026-11-04.</p>
+<p><strong>Student-and-teacher project guidance system for Israeli high-school thesis projects.</strong> Operator: אורי העליון. Contact: <a href="mailto:uribyology@gmail.com">uribyology@gmail.com</a>. Last updated: 2026-11-23.</p>
 <p><strong>What the app does.</strong> The site is a static web app. Each teacher sets up their own private copy of the server code in their own Google account (Google Apps Script). All data (students, tasks, submissions, feedback, grades) is stored only in that teacher's Google Drive. The operator has no database and cannot access teacher or student data.</p>
 <p><strong>Google user data.</strong> Sign-in uses basic profile identifiers (openid, email, name) to match users to the teacher's roster. During the one-time teacher setup, the setup page (running in the teacher's browser) uses the Apps Script API and Cloud Resource Manager/Service Usage APIs, with the teacher's explicit consent, solely to create and deploy the teacher's own Apps Script project and personal Cloud project. Those access tokens stay in browser memory, are not stored, and are not sent to the operator or any third party. The teacher's own server later asks the teacher for Drive access to store its data in the teacher's own Drive, and for permission to install signed updates.</p>
 <table>
 <tr><th>Scope</th><th>Who / when</th><th>Purpose</th></tr>
 <tr><td><code>script.projects</code></td><td>Teacher, one-time setup</td><td>Create the teacher's own Apps Script project and upload the system's code into it</td></tr>
 <tr><td><code>script.deployments</code></td><td>Teacher, one-time setup</td><td>Create a version and deploy the project as the teacher's private web app</td></tr>
-<tr><td><code>cloud-platform</code></td><td>Teacher, one-time setup</td><td>Create a personal Google Cloud project in the teacher's account and enable the Apps Script API there, so the teacher's own server can install signed updates to itself</td></tr>
+<tr><td><code>cloudplatformprojects</code></td><td>Teacher, one-time setup</td><td>Create a personal Google Cloud project in the teacher's account (project creation only), so the teacher's own server can install signed updates to itself</td></tr>
+<tr><td><code>service.management</code></td><td>Teacher, one-time setup</td><td>Enable the Apps Script API in that personal project (service enablement only)</td></tr>
 <tr><td><code>userinfo.email</code>, <code>openid</code></td><td>Teacher and student sign-in</td><td>Show which account is being set up; match a signed-in user to the teacher's roster</td></tr>
 <tr><td><code>drive</code>, <code>script.external_request</code>, <code>script.scriptapp</code>, <code>script.projects</code>, <code>script.deployments</code></td><td>Teacher's own script (not the operator's app), one-time approval by the teacher</td><td>Store data in the teacher's Drive, fetch signed update manifests from the public site, run a scheduled update check, install updates</td></tr>
 </table>
